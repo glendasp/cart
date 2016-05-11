@@ -1,0 +1,28 @@
+nav.navbar.navbar-inverse.navbar-fixed-top
+    .container
+        .navbar-header
+            button.navbar-toggle.collapsed(type='button', data-toggle='collapse', data-target='#navbar', aria-expanded='false', aria-controls='navbar')
+                span.sr-only Toggle navigation
+            a.navbar-brand(href='/') Home
+        #navbar.navbar-collapse.collapse
+
+            //Search form
+            form.navbar-form.navbar-left(method='post', action='/search')
+                .form-group
+                    input.form-control(type='text', name='q', placeholder='Search...')
+                    button.btn.btn-success(type='submit') Submit
+
+            //Login
+            form.navbar-form.navbar-right(method='post' action='/login' )
+                .form-group
+                    input.form-control(type='text', placeholder='username')
+                .form-group
+                    input.form-control(type='password', placeholder='Password')
+                button.btn.btn-success(type='submit') Log in
+
+            //Sigup
+            form.navbar-form.navbar-right(method='get' action='/signup')
+                .form-group
+                input.btn.btn-success(type='submit'  value='Click here to Signup')
+
+        .navbar-collapsese

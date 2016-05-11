@@ -1,0 +1,16 @@
+body {
+  padding-top: 100px;
+  font: 14px "Lucida Grande", Helvetica, Arial, sans-serif;
+}
+
+a {
+  color: #00B7FF;
+}
+
+#navbar-gap{
+  margin-top: -4%;
+}
+
+img{
+  width: 200px;
+}
